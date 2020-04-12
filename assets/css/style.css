@@ -337,9 +337,8 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: calc(100vh - 72px);
-  background: url("../img/pexels_jayden_burdick_boston_full.jpg");
-    /* center center*/
-  background-position: top;
+  background: url("../img/pexels_jayden_burdick_boston_full.jpg") center center;
+/*  background-position: top;*/
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
