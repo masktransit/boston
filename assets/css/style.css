@@ -15,6 +15,8 @@ body {
 
 a {
   color: #1bac91;
+  font-weight: 610;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -120,10 +122,20 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+  text-decoration: none;
 }
 
 .nav-menu > ul > li + li {
   margin-left: 30px;
+}
+
+.nav-menu > ul > li + .firstsocial {
+  padding-top: 2px;
+}
+
+.nav-menu > ul > li + .shortspace {
+  margin-left: 9px;
+  padding-top: 2px;
 }
 
 .nav-menu > ul > li > a:before {
@@ -383,7 +395,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  font-weight: 550;
+  font-weight: 525;
   font-size: 23px;
   letter-spacing: 1px;
   display: inline-block;
@@ -393,6 +405,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #fff;
   color: #fff;
   background: #1bac91;
+  text-decoration: none;
 }
 
 #hero .btn-get-started:hover {
@@ -495,6 +508,10 @@ section {
   padding: 50px 0 40px 0;
 }
 
+.steps .st-second {
+  padding-top: 70px;
+}
+
 .steps .row {
   overflow: hidden;
 }
@@ -509,21 +526,51 @@ section {
 .steps .content-item span {
   display: block;
   font-size: 24px;
-  font-weight: 400;
-  color: #1bac91;
+  font-weight: 500;
+/*  color: #21413c;*/
+  color: #000000;
+  border-bottom: 1.5px solid #000000;
 }
 
 .steps .content-item h4 {
-  font-size: 28px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 800;
   padding: 0;
-  margin: 20px 0;
-  color: #21413c;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #1bac91;
+}
+
+.steps .content-item .firsth4 {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #1bac91;
+}
+
+.steps .content-item .midh4 {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  color: #1bac91;
+}
+
+.steps .content-item .lasth4 {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  color: #1bac91;
 }
 
 .steps .content-item p {
   color: #aaaaaa;
-  font-size: 15px;
+  font-size: 25px;
   margin: 0;
   padding: 0;
 }
@@ -638,6 +685,10 @@ section {
   overflow: hidden;
   z-index: 1;
   background: #FFFFFF;
+/*
+  height: 150px;
+  width: 200px;
+*/
 }
 
 .portfolio .portfolio-wrap::before {
@@ -698,14 +749,14 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+  font-size: 12px;
   color: #fff;
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -719,7 +770,7 @@ section {
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
   margin: 0 2px;
-  font-size: 28px;
+  font-size: 20px;
   display: inline-block;
   transition: 0.3s;
 }
